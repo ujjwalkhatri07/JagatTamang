@@ -105,13 +105,14 @@ export default function Portfolio() {
             Digital Art Gallery
           </p>
 
+        
+          {/* Commission CTA */}
           <a
-            href="#gallery"
-            className="mt-12 inline-block px-8 py-3 border border-white hover:bg-white hover:text-black transition duration-500 tracking-widest text-sm"
+            href="#contact"
+            className="mt-10 inline-block px-8 py-3 bg-white text-black hover:bg-gray-200 transition duration-500 tracking-widest text-sm uppercasemt-10 inline-flex items-center px-8 py-3 bg-white text-black text-sm uppercase tracking-widest font-medium rounded-full shadow-md border border-gray-200 hover:bg-gray-50 hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 ease-out focus:outline-none focus:ring-2 focus:ring-black/20mt-10 inline-flex items-center px-8 py-3 bg-white text-black font-serif text-sm uppercase tracking-widest font-medium rounded-full shadow-md border border-gray-200 hover:bg-gray-50 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
           >
-            Enter Gallery
+            Request Custom Artwork
           </a>
-
           <div className="mt-16 text-gray-500 text-xs tracking-widest animate-bounce">
             ↓ Scroll to Explore
           </div>
