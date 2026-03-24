@@ -58,7 +58,6 @@ const artworks = [
     image: "/images/art8.jpg",
     description: "Style: Realistic / Monochrome Landscape Layered  acrylic  painting with knife detailing "
   },
-  ,
   {
     title: "Aamadablam mountain journey ( Nepal)",
     medium: "oil in canvas",
