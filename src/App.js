@@ -165,9 +165,10 @@ export default function Portfolio() {
               className="max-w-5xl w-full text-center"
             >
               <img
-                src={artworks[selectedIndex].image}
-                className="w-full max-h-[75vh] object-contain rounded-lg"
-              />
+  src={artworks[selectedIndex].image}
+  alt={artworks[selectedIndex].title}
+  className="w-full max-h-[75vh] object-contain rounded-lg"
+/>
 
               <div className="mt-6">
                 <h3 className="text-2xl tracking-wide">
