@@ -3,25 +3,68 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const artworks = [
   {
-    title: "Traditional Portrait",
+    title: "Traditional Portrait - Oil Painting",
     medium: "Oil on Canvas",
     size: "24 x 36 in",
     image: "/images/art1.jpg",
-    description: "A culturally rich portrait capturing traditional attire with deep tones and expressive realism."
+    description: "Colors Used: A culturally rich portrait capturing traditional attire with deep tones and expressive realism."
   },
   {
-    title: "Forest Stream",
+    title: "Traditional Portrait - Oil Painting",
     medium: "Oil on Canvas",
     size: "18 x 24 in",
     image: "/images/art2.jpg",
-    description: "A tranquil landscape where light and water blend to create a peaceful natural atmosphere."
+    description: "Colors Used: Burnt Sienna, Raw Umber, Yellow Ochre, Titanium White, Ivory Black, Ultramarine Blue, Sap Green, and Earth tones"
   },
   {
-    title: "Gurung Village",
+    title: "Forest Stream Landscape",
+    medium: "Oil on Canvas",
+    size: "18 x 24 in",
+    image: "/images/art3.jpg",
+    description: "Colors Used: Sap Green, Viridian Green, Olive Green, Yellow Ochre, Burnt Umber, Titanium White, Ivory Black, and touches of Ultramarine Blue"
+  },
+  {
+    title: "Gandruk Gurung Village (Nepal)",
     medium: "Oil on Canvas",
     size: "24 x 36 in",
-    image: "/images/art3.jpg",
-    description: "A scenic depiction of rural Nepal, highlighting culture and mountain life."
+    image: "/images/art4.jpg",
+    description: "Style: Landscape / Nature Painting"
+  },
+  {
+    title: "Smiling Nepalese women ",
+    medium: "charcoal on paper",
+    size: "29.7× 42 cm ( A3)",
+    image: "/images/art5.jpg",
+    description: "Style: realistic potrait/ charcoal drawing"
+  },
+  {
+    title: "Actress Miruna Magar ( cultural dress) ",
+    medium: "oil in canvas",
+    size: "18× 24 inch ",
+    image: "/images/art6.jpg",
+    description: "Realistic portrait / Traditional Portrait Painting"
+  },
+  {
+    title: "Crested Serpent Eagle ",
+    medium: "oil in canvas",
+    size: "36 × 48 inches",
+    image: "/images/art7.jpg",
+    description: "Style: Realistic wildlife art Layered oil painting with fine brush detailing"
+  },
+  {
+    title: "Aamadablam mountain journey ( Nepal)",
+    medium: "Acrylic colour on Canvas",
+    size: "24× 36inches",
+    image: "/images/art8.jpg",
+    description: "Style: Realistic / Monochrome Landscape Layered  acrylic  painting with knife detailing "
+  },
+  ,
+  {
+    title: "Aamadablam mountain journey ( Nepal)",
+    medium: "oil in canvas",
+    size: "18× 24inches",
+    image: "/images/art9.jpg",
+    description: "Style: Realistic / figurative art/ cultural and traditional life Layered oil painting with brush detailing "
   }
 ];
 
@@ -46,7 +89,7 @@ export default function Portfolio() {
 
       {/* Hero (Refined) */}
       <section className="h-[90vh] flex flex-col justify-center items-center text-center px-6 relative">
-        <div className="absolute inset-0 bg-[url('/images/art1.jpg')] bg-cover bg-center opacity-25 blur-sm scale-110" />
+        <div className="absolute inset-0 bg-[url('/images/art8.jpg')] bg-cover bg-center opacity-25 blur-sm scale-110" />
 
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -59,14 +102,14 @@ export default function Portfolio() {
           </h1>
 
           <p className="mt-6 text-gray-400 tracking-[0.3em] text-sm uppercase">
-            Digital Art Exhibition
+            Digital Art Gallery
           </p>
 
           <a
             href="#gallery"
             className="mt-12 inline-block px-8 py-3 border border-white hover:bg-white hover:text-black transition duration-500 tracking-widest text-sm"
           >
-            Enter Exhibition
+            Enter Gallery
           </a>
 
           <div className="mt-16 text-gray-500 text-xs tracking-widest animate-bounce">
@@ -144,6 +187,37 @@ export default function Portfolio() {
           </motion.div>
         )}
       </AnimatePresence>
+
+      <section className="max-w-5xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <img
+            src="/images/artist.png"
+            alt="Jagat Tamang"
+            className="w-full h-[400px] object-cover rounded-xl shadow-lg"
+          />
+        </div>
+
+        <div>
+          <h2 className="text-3xl mb-6 tracking-widest uppercase">
+            The Artist
+          </h2>
+
+          <p className="text-gray-400 leading-relaxed mb-4">
+            Based in Toronto, Jagat Tamang is a visual artist with over 20 years
+            of experience working across oil, acrylic, and pencil mediums. His
+            work explores realism, cultural identity, and emotional depth through
+            portraits and landscapes.
+          </p>
+
+          <p className="text-gray-400 leading-relaxed mb-6">
+            Each artwork reflects a strong connection to tradition and
+            storytelling, blending technical precision with expressive detail to
+            create immersive visual experiences.
+          </p>
+
+          <p className="text-gray-500 tracking-widest">— Jagat Tamang</p>
+        </div>
+      </section>
 
       {/* Footer */}
       <footer className="bg-[#0a0a0a] border-t border-gray-800 mt-20">
